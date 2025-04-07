@@ -18,19 +18,19 @@
         height: 600px;
         box-shadow: 0 0 10px rgba(0,0,0,1);
       }
-      .player_back{
+      .buttons{
         background: black;
-      }
-      .player_window{
-        width: 100%;
-        height: 100%
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Центрируем вертикально */
+        align-items: center; /* Центрируем горизонтально */
       }
     </style>
   </head>
   <body>
     <div id="player" class="player">
-        <div class="player_back">
-          <div class="js-video-container player_window"></div>
+        <div class="buttons">
+          <div class="js-video-container"></div>
           <button class="js-play-button button">
             <i  class="fa fa-play icon" aria-hidden="true"></i>
           </button>
@@ -48,3 +48,5 @@
     </script>
   </body>
 </html>
+
+
