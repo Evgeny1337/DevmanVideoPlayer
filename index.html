@@ -14,30 +14,33 @@
         color: white;
       }
       .player{
-        width: 800px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
         box-shadow: 0 0 10px rgba(0,0,0,1);
-      }
-      .buttons{
-        background: black;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Центрируем вертикально */
-        align-items: center; /* Центрируем горизонтально */
+      }
+      .display{
+        flex-grow: 1;
+      }
+      .buttons {
+        background: black;
+        display: flex;
+        flex-grow: 0;
       }
     </style>
   </head>
   <body>
-    <div id="player" class="player">
-        <div class="buttons">
-          <div class="js-video-container"></div>
-          <button class="js-play-button button">
-            <i  class="fa fa-play icon" aria-hidden="true"></i>
-          </button>
-          <button class="js-pause-button button" hidden>
-            <i  class="fa fa-pause icon" aria-hidden="true"></i>
-          </button>
-        </div>
+    <div id="player" class="player">    
+          <div class="js-video-container display"></div>
+          <div class="buttons">
+            <button class="js-play-button button">
+              <i  class="fa fa-play icon" aria-hidden="true"></i>
+            </button>
+            <button class="js-pause-button button" hidden>
+              <i  class="fa fa-pause icon" aria-hidden="true"></i>
+            </button>
+          </div>
     </div>
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
