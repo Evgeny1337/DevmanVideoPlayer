@@ -72,3 +72,4 @@ livereload ./DevmanVideoPlayer/
 https://evgeny1337.github.io/DevmanVideoPlayer/
 
 ## Пример работы
+![Видео плеер](https://github.com/Evgeny1337/DevmanVideoPlayer/fonts/example.png)
