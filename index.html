@@ -6,7 +6,28 @@
     <link rel="icon" href="fonts/video-svgrepo-com.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      .button{
+      body {
+        display: flex;
+      }
+      .player {
+        width: 800px;
+        height: 600px;
+        display: flex;
+        flex-direction: column
+      }
+      .display {
+        flex-grow: 1; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+      }
+      .buttons {
+        background: black; 
+        display: flex;
+        justify-content: flex-start; 
+        align-items: flex-end;
+      }
+      .button {
         border: none;
         cursor: pointer;
         background: transparent;
