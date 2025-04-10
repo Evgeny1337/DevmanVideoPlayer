@@ -3,30 +3,10 @@
     <meta charset="UTF-8">
     <title>Видео</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="fonts/video-svgrepo-com.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      body {
-        display: flex;
-      }
-      .player {
-        width: 800px;
-        height: 600px;
-        display: flex;
-        flex-direction: column
-      }
-      .display {
-        flex-grow: 1; 
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-      }
-      .buttons {
-        background: black; 
-        display: flex;
-        justify-content: flex-start; 
-        align-items: flex-end;
-      }
-      .button {
+      .button{
         border: none;
         cursor: pointer;
         background: transparent;
@@ -43,17 +23,22 @@
     <div id="player" class="player">    
           <div class="js-video-container display"></div>
           <div class="buttons">
-            <button class="js-play-button button">
-              <i  class="fa fa-play icon" aria-hidden="true"></i>
-            </button>
-            <button class="js-pause-button button" hidden>
-              <i  class="fa fa-pause icon" aria-hidden="true"></i>
-            </button>
-            <button class="js-volume-button button" hidden>
-              <i class="fa fa-volume-up icon" aria-hidden="true"></i>
-            </button>
-            <button class="js-mute-button button">
-              <i class="fa fa-volume-off icon" aria-hidden="true"></i>
+            <div>
+              <button class="js-play-button button">
+                <i  class="fa fa-play icon" aria-hidden="true"></i>
+              </button>
+              <button class="js-pause-button button" hidden>
+                <i  class="fa fa-pause icon" aria-hidden="true"></i>
+              </button>
+              <button class="js-volume-button button" hidden>
+                <i class="fa fa-volume-up icon" aria-hidden="true"></i>
+              </button>
+              <button class="js-mute-button button">
+                <i class="fa fa-volume-off icon" aria-hidden="true"></i>
+              </button>
+            </div>
+            <button class="js-fullscreen-button button">
+              <i class="fa fa-expand icon" aria-hidden="true"></i>
             </button>
           </div>
     </div>
